@@ -1,0 +1,69 @@
+
+---
+
+#gitignore
+
+Since you're using Java + Node + Docker, here is a combined `.gitignore`:
+
+```gitignore
+# ======================
+# Java / Maven / Gradle
+# ======================
+target/
+build/
+.gradle/
+*.class
+*.log
+
+# IntelliJ
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# ======================
+# Node.js
+# ======================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Playwright
+playwright-report/
+test-results/
+
+# ======================
+# Logs
+# ======================
+logs/
+*.log
+
+# ======================
+# OS Files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Docker
+# ======================
+*.tar
+
+# ======================
+# Environment Files
+# ======================
+.env
+.env.local
+
+# ======================
+# Temporary Files
+# ======================
+*.tmp
+*.swp
