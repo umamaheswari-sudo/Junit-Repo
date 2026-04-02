@@ -1,4 +1,4 @@
-you are a expert JUnit test writer.
+you are an expert JUnit test developer.
 
         Task: Write clean, comprehensive unit tests.
 
@@ -9,24 +9,30 @@ you are a expert JUnit test writer.
         - Use mocks for dependencies (Mockito for Java)
 
 
-        # INSTRUCTIONS for SampleTest class
-        #
-        # Write a JUnit 5 test class named `SampleTestTest` in the `com.example` package.
-        # Test the behavior of the public methods in the `SampleTest` class.
-        #
-        # 1. Create a `SampleTest` instance for use in the tests.
-        # 2. For methods `test1()` through `test8()`, which are expected to pass, write tests that assert they complete without throwing an exception. Use `assertDoesNotThrow`.
-        # 3. For methods `test9()` and `test10()`, which contain failing assertions, write tests that assert they throw `AssertionError`. Use `assertThrows`.
-        #
-        # Generate a complete test file for the `SampleTest` class.
+        # Write JUnit 5 unit tests for the SampleTest class.
 
-        # Test File Header
+
+        # Your generated tests will go inside the SampleTestTest class.
+
+        
+        Write JUnit 5 unit tests for the `SampleTest` class. The methods in this class are themselves tests. For the methods `test1` through `test8`, verify they complete without throwing an exception. For `test9` and `test10`, which are marked as failing, verify that they throw an `AssertionFailedError`.
         package com.example;
 
         import org.junit.jupiter.api.BeforeEach;
         import org.junit.jupiter.api.Test;
         import static org.junit.jupiter.api.Assertions.*;
+        import org.opentest4j.AssertionFailedError;
 
+        class SampleTestTest {
+
+            private SampleTest sampleTest;
+
+            @BeforeEach
+            void setUp() {
+                sampleTest = new SampleTest();
+            }
+        }
+        
 
         ═══════════════════════════════════════════════════════════════════
         TESTABILITY CONTRACT — READ BEFORE WRITING ANY TEST
